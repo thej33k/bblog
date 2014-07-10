@@ -1,0 +1,41 @@
+<head>
+  <title>bblog</title>
+</head>
+
+<body>
+  gg
+  
+  <h1>  Post </h1>
+  {{>Blog}}
+</body>
+
+<template name="Blog">
+  <div class="row">
+    <div class="container">
+<form class="form-horizontal" id="BlogForm" role="form">
+  <div class="form-group">
+    <label for="InputTitle">Lesson's name</label>
+    <input type="text" id="blogTitle" class="form-control" placeholder="Enter lesson's name">
+  </div>
+  <div class="form-group">
+    <label for="LessonContent">Lesson's content</label>
+
+<textarea id="blogBody" class="form-control" rows="7"></textarea>
+
+
+  </div>
+  <!--<div class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <input type="file" id="exampleInputFile">
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Check me out
+    </label>
+  </div>-->
+  <button class="btn btn-default">Submit</button>
+</form>
+</div>
+  </div>
+</template>
